@@ -291,6 +291,33 @@ footer h5 {
     width: 70%;
 }
 
+.section_backgroundImage {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;}
+.backgroundImage {
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-size: cover;
+    min-height: 100vw;
+    position: relative;
+    right: -20vw;
+    top: -25vw;
+    transform: scale(1);
+    width: 100%;
+}
+.backgroundImage2 {
+    background-image: url(../img/bg-tablet-pattern.svg);
+    background-size: cover;
+    right: -65vw;
+    min-height: 100vw;
+    position: relative;
+    top: -10vw;
+    transform: scale(.8);
+    width: 100%;}
+
 @media (min-width:1440px) {
 
     .desktopButton {
@@ -539,5 +566,37 @@ footer h5 {
     .social_icons i:hover {
         color: var(--colorPrimario);
         cursor: pointer
+    }
+
+    .section_backgroundImage {
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: -1;
+
+    }
+
+    .backgroundImage {
+        background-image: url(../img/bg-tablet-pattern.svg);
+        background-size: cover;
+        min-height: 100vw;
+        position: relative;
+        right: -36vw;
+        top: -37vw;
+        transform: scale(.58);
+        width: 100%;
+    }
+
+    .backgroundImage2 {
+        background-image: url(../img/bg-tablet-pattern.svg);
+        background-size: cover;
+        left: -58vw;
+        min-height: 80vw;
+        position: relative;
+        top: -50vw;
+        transform: scale(.58);
+        width: 100%;
     }
 }

@@ -293,11 +293,13 @@ footer h5 {
 
 .section_backgroundImage {
     display: block;
+    height: 200vh;
     overflow: hidden;
     position: absolute;
-    width: 100%;
     top: 0;
+    width: 100%;
     z-index: -1;}
+
 .backgroundImage {
     background-image: url(../img/bg-tablet-pattern.svg);
     background-size: cover;
@@ -311,9 +313,9 @@ footer h5 {
 .backgroundImage2 {
     background-image: url(../img/bg-tablet-pattern.svg);
     background-size: cover;
-    right: -65vw;
     min-height: 100vw;
     position: relative;
+    right: -65vw;
     top: -10vw;
     transform: scale(.8);
     width: 100%;}
@@ -543,7 +545,7 @@ footer h5 {
     }
 
     button:hover {
-        background-color: #f3603b1d;
+        background-color: rgba(243, 96, 59, 0.11);
         color: var(--colorPrimario);
         transition: .5s ease-in-out;
     }
@@ -570,12 +572,12 @@ footer h5 {
 
     .section_backgroundImage {
         display: block;
+        height: 280vh;
         overflow: hidden;
         position: absolute;
-        width: 100%;
         top: 0;
+        width: 100%;
         z-index: -1;
-
     }
 
     .backgroundImage {
@@ -593,7 +595,7 @@ footer h5 {
         background-image: url(../img/bg-tablet-pattern.svg);
         background-size: cover;
         left: -58vw;
-        min-height: 80vw;
+        min-height: 74vw;
         position: relative;
         top: -50vw;
         transform: scale(.58);

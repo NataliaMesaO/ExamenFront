@@ -7,15 +7,42 @@
     padding: 0;
 }
 
+:root {
+    --colorPrimario: rgba(243, 97, 60, 1);
+    --colorSecundario: rgba(36, 46, 83, 1);
+    --colorNeutro: rgba(179, 178, 183, 1);
+}
+
 html {
     font-size: 62.5%;
 }
 
 a {
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 1);
     font-size: 1.3rem;
     font-weight: 400;
     text-decoration: none;
+}
+
+h2 {
+    color: var(--colorSecundario);
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h3 {
+    color: var(--colorSecundario);
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 2rem;
+    text-align: center;
+}
+
+p {
+    color: var(--colorNeutro);
+    font-size: 1.3rem;
+    line-height: 2.6rem;
 }
 
 header {
@@ -37,7 +64,8 @@ header {
 }
 
 .header_logo {
-    width: 75%;
+    width: 80%;
+    padding-top: .8rem;
 
 }
 
@@ -45,14 +73,6 @@ main {
     align-items: center;
     display: flex;
     flex-direction: column;
-    ;
-}
-
-h2 {
-    color: #232C50;
-    font-weight: 700;
-    font-size: 3.5rem;
-    text-align: center;
 }
 
 .main_section_graficas {
@@ -71,34 +91,20 @@ h2 {
     width: 70%;
 }
 
-p {
-    color: #B3B2B7;
-    font-size: 1.3rem;
-    line-height: 2.6rem;
-}
-
 .main_section_graficas p {
     margin: 0rem 3rem;
     text-align: center;
 }
 
 button {
-    background: #F3603B;
+    background: var(--colorPrimario);
     border: none;
     border-radius: 5rem;
     box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5);
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 1);
     font-size: 1rem;
     margin: 1rem;
     padding: 1.3rem 2.7rem;
-}
-
-h3 {
-    color: #232851;
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
-    padding: 2rem;
 }
 
 .main_section_about {
@@ -129,35 +135,33 @@ h3 {
 .lista_titulo {
     align-items: center;
     background-color: rgba(243, 97, 60, 0.107);
-    ;
     border-bottom-left-radius: 5rem;
     border-top-left-radius: 5rem;
     display: flex;
     flex-direction: row;
     gap: 1rem;
-
 }
 
 .numeral {
-    background-color: #F3603B;
+    background-color: var(--colorPrimario);
     border-radius: 5rem;
-    color: #FFFFFF;
-    padding: 1rem 2.5rem;
+    color: rgba(255, 255, 255, 1);
     font-size: 1.4rem;
-    font-weight: 700
+    font-weight: 700;
+    padding: 1rem 2.5rem;
 }
 
 .lista_titulo h4 {
-    color: #232851;
+    color: var(--colorSecundario);
     font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: -0.015rem;
 }
 
 .lista_contenedor p {
+    letter-spacing: -0.015rem;
     margin: 1rem 1rem 1rem 0rem;
     text-align: left;
-    letter-spacing: -0.015rem;
 }
 
 .article_lista {
@@ -171,28 +175,27 @@ h3 {
     background-color: rgba(250, 250, 250, 1);
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
     height: 21rem;
+    justify-content: flex-end;
     margin: 8rem 1rem 3rem 1rem;
     position: relative;
     width: 33rem;
-    justify-content: flex-end;
-    gap: 1.5rem;
 }
 
 .tarjeta img {
     display: block;
     left: 11.6rem;
-    top: -6rem;
     position: absolute;
+    top: -6rem;
     width: 30%;
-
 }
 
 .tarjeta h4 {
-    color: #232851;
+    color: var(--colorSecundario);
     font-size: 1.5rem;
-    text-align: center;
     font-weight: 700;
+    text-align: center;
 }
 
 .tarjeta p {
@@ -214,7 +217,7 @@ h3 {
 
 .main_section_banner {
     align-items: center;
-    background-color: #F3603B;
+    background-color: var(--colorPrimario);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -224,13 +227,13 @@ h3 {
 }
 
 .main_section_banner h2 {
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 1);
 }
 
 .main_section_banner button {
-    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 1);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-    color: #F3603B;
+    color: var(--colorPrimario);
 }
 
 .footer_section {
@@ -270,10 +273,12 @@ h3 {
 }
 
 .social_icons nav {
+    color: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    font-size: 2rem;
     gap: 3rem;
+    justify-content: space-around;
 }
 
 footer h5 {
@@ -291,7 +296,7 @@ footer h5 {
     .desktopButton {
         display: inline-block;
         font-size: 1.3rem;
-        padding: 1.5rem 3.5rem;
+        padding: 2rem 5rem;
     }
 
     .header_icon {
@@ -299,7 +304,7 @@ footer h5 {
     }
 
     .header_logo {
-        width: 120%;
+        width: 130%;
     }
 
     .header_navbar {
@@ -311,7 +316,7 @@ footer h5 {
     }
 
     .header_navbar a {
-        color: #232851;
+        color: var(--colorSecundario);
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 1.9rem;
@@ -323,11 +328,11 @@ footer h5 {
     }
 
     .grafica {
+        align-items: center;
         display: flex;
         flex-direction: row-reverse;
-        align-items: center;
-        padding: 6.5rem 16rem;
         justify-content: space-between;
+        padding: 6.5rem 16rem;
     }
 
     .section_grafica {
@@ -345,10 +350,9 @@ footer h5 {
     .main_section_graficas h2,
     .main_section_graficas p,
     .main_section_graficas button {
-        text-align: start;
         margin: 0rem;
+        text-align: start;
     }
-
 
     .main_section_graficas h2 {
         font-size: 5.8rem;
@@ -361,10 +365,10 @@ footer h5 {
         color: rgba(0, 0, 0, 1);
         font-weight: 500;
         padding-right: 7rem;
-
     }
 
     .main_section_about {
+        align-items: flex-start;
         flex-direction: row;
         justify-content: space-between;
         padding: 6.5rem 16rem;
@@ -373,15 +377,14 @@ footer h5 {
     .main_section_article_about {
         align-items: flex-start;
         gap: 2rem;
-        width: 40%;
         padding: 0rem;
-
+        width: 40%;
     }
 
     .main_section_article_about h3,
     .main_section_article_about p {
-        text-align: start;
         margin: 0rem;
+        text-align: start;
     }
 
     .main_section_article_about h3 {
@@ -391,12 +394,12 @@ footer h5 {
 
     .article_lista {
         gap: 2rem;
-        width: 50%;
         padding-top: 1rem;
+        width: 50%;
     }
 
     .lista_titulo {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 1);
     }
 
     .numeral {
@@ -412,7 +415,6 @@ footer h5 {
         padding-left: 9rem;
     }
 
-
     .tarjeta:first-child,
     .tarjeta:last-child {
         display: flex;
@@ -424,9 +426,8 @@ footer h5 {
 
     .tarjeta {
         height: 25rem;
-        width: 40rem;
         margin: 11rem 0rem 7rem;
-
+        width: 40rem;
     }
 
     .tarjeta img {
@@ -444,8 +445,8 @@ footer h5 {
     }
 
     .main_section_banner h2 {
-        width: 40%;
         text-align: start;
+        width: 40%;
     }
 
     button {
@@ -461,6 +462,10 @@ footer h5 {
         padding: 5rem 15rem;
     }
 
+    .footer_logo {
+        width: 100%;
+    }
+
     .footer_section h5 {
         bottom: 4rem;
         font-size: 1.5rem;
@@ -470,14 +475,14 @@ footer h5 {
 
     .social_icons {
         flex-direction: column-reverse;
-        justify-content: space-between;
         gap: 8rem;
         padding-top: 1.3rem;
-        width: 15%;
+        justify-content: space-between;
     }
 
     .social_icons nav {
-        gap: 1rem;
+        font-size: 2.5rem;
+        gap: 1.5rem;
     }
 
     .footer_section_article_navbars {
@@ -508,5 +513,31 @@ footer h5 {
 
     button:hover {
         cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #f3603b1d;
+        color: var(--colorPrimario);
+        transition: .5s ease-in-out;
+    }
+
+    .main_section_banner button:hover {
+        border-color: rgba(255, 255, 255, 1);
+        border-style: double;
+        color: rgba(255, 255, 255, 1);
+        transition: .5s;
+    }
+
+    .header_navbar a:hover {
+        color: var(--colorNeutro);
+    }
+
+    .footer_section_article_navbars a:hover {
+        color: var(--colorPrimario);
+    }
+
+    .social_icons i:hover {
+        color: var(--colorPrimario);
+        cursor: pointer
     }
 }
